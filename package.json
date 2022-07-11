@@ -1,6 +1,6 @@
 {
 	"name": "eslint-config-shadowacre",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"dependencies": {
 		"@babel/eslint-parser": "^7.18.2",
 		"vue-eslint-parser": "^9.0.3"
