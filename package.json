@@ -2,6 +2,7 @@
 	"name": "eslint-config-shadowacre",
 	"version": "1.0.2",
 	"peerDependencies": {
-		"eslint": ">= 3"
+		"eslint": ">= 3",
+		"eslint-plugin-vue": "^9.2.0"
 	}
 }
