@@ -1,7 +1,7 @@
 module.exports = {
 	extends: [
-		"eslint-config-shadowacre/base",
 		"plugin:vue/recommended",
+		"eslint-config-shadowacre/base",
 	],
 	plugins: [
 		"vue",
