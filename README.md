@@ -17,7 +17,7 @@ module.exports = {
 ```
 
 ### Basic nuxt.js project
-```
+```js
 module.exports = {
 	root:    true,
 	extends: "eslint-config-shadowacre/nuxt",
@@ -25,7 +25,7 @@ module.exports = {
 ```
 
 #### Recommended additional rules
-```
+```js
 	rules: {
 		// error when attempting to use vue features that are not available in the projects version of vue:
 		"vue/no-unsupported-features":     ["error", { version: "^2.6.14" }],
