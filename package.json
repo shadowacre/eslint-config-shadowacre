@@ -1,0 +1,7 @@
+{
+	"name": "eslint-config-shadowacre",
+	"version": "1.0.0",
+	"peerDependencies": {
+		"eslint": ">= 3"
+	}
+}
