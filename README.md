@@ -6,21 +6,27 @@
 
 ## Configuration
 Below are some example `.babelrc.js` files using the ShadowAcre eslint configuration as a base.
-### Basic node.js project (with babel)
+### Basic node.js project (with babel + jest)
 
 ```js
 /* eslint-env node */
 module.exports = {
 	root:    true,
-	extends: "eslint-config-shadowacre/node"
+	extends: [
+		"eslint-config-shadowacre/node",
+		"eslint-config-shadowacre/jest",
+	],
 }
 ```
 
-### Basic nuxt.js project
+### Basic nuxt.js project (with jest)
 ```js
 module.exports = {
 	root:    true,
-	extends: "eslint-config-shadowacre/nuxt",
+	extends: [
+		"eslint-config-shadowacre/nuxt",
+		"eslint-config-shadowacre/jest",
+	],
 }
 ```
 
