@@ -38,7 +38,7 @@ module.exports = {
 		"jest/prefer-hooks-in-order": ["error"],
 		"jest/prefer-hooks-on-top": ["error"],
 		"jest/prefer-lowercase-title": ["error"],
-		"jest/refer-snapshot-hint": ["error"],
+		"jest/prefer-snapshot-hint": ["error"],
 		"jest/prefer-spy-on": ["error"],
 		"jest/prefer-strict-equal": ["error"],
 		"jest/prefer-to-be": ["error"],
