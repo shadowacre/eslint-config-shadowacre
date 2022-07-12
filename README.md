@@ -43,10 +43,11 @@ module.exports = {
 
 ### Jest config, extending project config
 ```js
+/* eslint-env node */
 module.exports = {
 	extends: [
 		"../.eslintrc.js"
-		"eslint-config-shadowacre/jest"
+		"eslint-config-shadowacre/jest",
 	]
 }
 ```

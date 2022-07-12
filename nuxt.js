@@ -15,6 +15,7 @@ module.exports = {
 		requireConfigFile: false,
 	},
 	rules: {
+		"import/no-nodejs-modules":     ["error"],
 		"nuxt/no-env-in-context":       ["error"],
 		"nuxt/no-env-in-hooks":         ["error"],
 		"nuxt/no-globals-in-created":   ["error"],
