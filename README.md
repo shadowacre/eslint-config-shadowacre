@@ -7,28 +7,22 @@ You can manually install the `eslint-config-shadowacre` package, but you'll have
 
 ## Configuration
 Below are some example `.babelrc.js` files using the ShadowAcre eslint configuration as a base.
-### Basic node.js project (with babel + jest)
+### Basic node.js project (with babel)
 
 ```js
 /* eslint-env node */
 module.exports = {
 	root:    true,
-	extends: [
-		"eslint-config-shadowacre/node",
-		"eslint-config-shadowacre/jest",
-	],
+	extends: "eslint-config-shadowacre/node",
 }
 ```
 
-### Basic nuxt.js project (with jest)
+### Basic nuxt.js project
 ```js
 /* eslint-env node */
 module.exports = {
 	root:    true,
-	extends: [
-		"eslint-config-shadowacre/nuxt",
-		"eslint-config-shadowacre/jest",
-	],
+	extends: "eslint-config-shadowacre/nuxt",
 }
 ```
 
@@ -45,3 +39,14 @@ module.exports = {
 		"vue/no-restricted-html-elements": ["error", { element: "button", message: "Please us the custom <SimpleButton /> component" }],
 	}
  ```
+
+
+### Jest config, extending project config
+```js
+module.exports = {
+	extends: [
+		"../.eslintrc.js"
+		"eslint-config-shadowacre/jest"
+	]
+}
+```
