@@ -1,8 +1,9 @@
 ## Installation
-
+The simplest way to install is to simply run the npx command below. This command will automatically detect and use yarn if available.
+```bash
+> npx install-peerdeps --dev eslint-config-shadowacre
 ```
-> yarn add eslint eslint-config-shadowacre --dev
-```
+You can manually install the `eslint-config-shadowacre` package, but you'll have to install peer dependencies manually too.
 
 ## Configuration
 Below are some example `.babelrc.js` files using the ShadowAcre eslint configuration as a base.
@@ -21,6 +22,7 @@ module.exports = {
 
 ### Basic nuxt.js project (with jest)
 ```js
+/* eslint-env node */
 module.exports = {
 	root:    true,
 	extends: [
