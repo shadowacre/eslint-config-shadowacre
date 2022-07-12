@@ -1,6 +1,6 @@
 {
 	"name": "eslint-config-shadowacre",
-	"version": "1.0.4",
+	"version": "1.0.6",
 	"dependencies": {
 		"@babel/eslint-parser": "^7.18.2",
 		"eslint-plugin-istanbul": "^0.1.2",
