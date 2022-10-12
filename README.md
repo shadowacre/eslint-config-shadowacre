@@ -5,8 +5,19 @@ The simplest way to install is to simply run the npx command below. This command
 ```
 You can manually install the `eslint-config-shadowacre` package, but you'll have to install peer dependencies manually too.
 
+Once installed, pick a configuration that works for you from below.
+
+### Add to your `package.json`
+If you want to be able to run the linter with `yarn lint` then add the lint script to your package.json, like so:
+
+```
+  "scripts": {
+    "lint": "npx eslint ."
+  },
+```
+
 ## Configuration
-Below are some example `.babelrc.js` files using the ShadowAcre eslint configuration as a base.
+Below are some example `.eslintrc.js` files using the ShadowAcre eslint configuration as a base.
 
 ### Basic node.js project (with babel)
 
