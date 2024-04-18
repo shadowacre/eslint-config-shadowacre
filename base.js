@@ -23,7 +23,7 @@ module.exports = {
 		"no-var":                           ["error"],
 		"camelcase":                        ["error", { properties: "always", ignoreDestructuring: true }],
 		"class-methods-use-this":           ["error"],
-		"complexity":                       ["error", { max: 6 }],
+		"complexity":                       ["error", { max: 20 }],
 		"consistent-return":                ["error"],
 		"curly":                            ["error", "multi-or-nest"],
 		"default-case":                     ["error"],
@@ -39,7 +39,7 @@ module.exports = {
 		"max-lines-per-function":           ["error", { max: 50, skipBlankLines: true, skipComments: true }],
 		"max-nested-callbacks":             ["error", { max: 2 }],
 		"max-params":                       ["error", { max: 10 }],
-		"max-statements":                   ["error", { max: 10 }],
+		"max-statements":                   ["error", { max: 20 }],
 		"multiline-comment-style":          ["error", "starred-block"],
 		"new-cap":                          ["error"],
 		"no-alert":                         ["error"],
@@ -143,7 +143,7 @@ module.exports = {
 		"max-len":                          ["error", { code: 140, tabWidth: 4, ignoreComments: true }],
 		"max-statements-per-line":          ["error", { max: 1 }],
 		"new-parens":                       ["error"],
-		"no-extra-parens":                  ["error"],
+		"no-extra-parens":                  ["off"],
 		"no-mixed-spaces-and-tabs":         ["error", "smart-tabs"],
 		"no-multiple-empty-lines":          ["error", { max: 1, maxBOF: 0, maxEOF: 0 }],
 		"no-trailing-spaces":               ["error"],
@@ -162,9 +162,8 @@ module.exports = {
 		"template-tag-spacing":             ["error", "never"],
 		"wrap-iife":                        ["error", "outside"],
 		"yield-star-spacing":               ["error", "after"],
-		"no-multi-spaces":                  ["error", {
-			exceptions: { VariableDeclarator: true, ImportDeclaration: true }
-		}],
+		"no-multi-spaces":                  ["off"],
+		"no-constant-condition":            ["error", { checkLoops: false }],
 		
 
 		"unicorn/better-regex":                            ["warn"],
@@ -272,7 +271,7 @@ module.exports = {
 		"import/no-duplicates":              ["error"],
 		"import/order":                      ["error", { "newlines-between": "always" }],
 		"import/newline-after-import":       ["error"],
-		"import/max-dependencies":           ["error", { max: 10 }],
+		"import/max-dependencies":           ["error", { max: 15 }],
 		"import/dynamic-import-chunkname":   ["error"],
 	},
 }
